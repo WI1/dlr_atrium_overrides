@@ -31,14 +31,14 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'menu-menu-projekte',
+            'key' => 'nice_menus-2',
           ),
         ),
         'value' => array(
-          'module' => 'menu',
-          'delta' => 'menu-projekte',
+          'module' => 'nice_menus',
+          'delta' => 2,
           'region' => 'header',
-          'weight' => 1,
+          'weight' => 0,
         ),
       ),
       1 => array(
@@ -57,57 +57,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium-user_links',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'weight',
-          ),
-        ),
-        'value' => 2,
-      ),
-      2 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'reactions',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block',
-          ),
-          2 => array(
-            'type' => 'array',
-            'key' => 'blocks',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'atrium-help',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'region',
-          ),
-        ),
-        'value' => 'space_tools',
-      ),
-      3 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'reactions',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block',
-          ),
-          2 => array(
-            'type' => 'array',
-            'key' => 'blocks',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'atrium-help',
+            'key' => 'atrium-account',
           ),
           4 => array(
             'type' => 'array',
@@ -115,31 +65,6 @@ function dlr_atrium_override_default_features_overrides() {
           ),
         ),
         'value' => 1,
-      ),
-      4 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'reactions',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block',
-          ),
-          2 => array(
-            'type' => 'array',
-            'key' => 'blocks',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'atrium-admin_links',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'weight',
-          ),
-        ),
-        'value' => 2,
       ),
     ),
     'deletions' => array(
@@ -159,47 +84,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium-search',
-          ),
-        ),
-      ),
-      1 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'reactions',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block',
-          ),
-          2 => array(
-            'type' => 'array',
-            'key' => 'blocks',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'xref-create',
-          ),
-        ),
-      ),
-      2 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'reactions',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block',
-          ),
-          2 => array(
-            'type' => 'array',
-            'key' => 'blocks',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'spaces-menu_editor',
+            'key' => 'menu-menu-projekte',
           ),
         ),
       ),
