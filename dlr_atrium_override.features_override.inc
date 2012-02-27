@@ -9,6 +9,574 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override = new stdClass;
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
+  $features_override->name = 'dlr_atrium_activity_listing';
+  $features_override->description = 'Adds project logos as an overlay on top of crayon project pictures';
+  $features_override->component_type = 'views';
+  $features_override->component_id = 'activity_listing';
+  $features_override->value = array(
+    'additions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'relationships',
+          ),
+        ),
+        'value' => array(
+          'group_nid' => array(
+            'label' => 'Gruppenbeitrag (Beitrag)',
+            'required' => 0,
+            'id' => 'group_nid',
+            'table' => 'og_ancestry',
+            'field' => 'group_nid',
+            'relationship' => 'none',
+          ),
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'defaults',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'relationships',
+          ),
+        ),
+        'value' => FALSE,
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 1,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 1,
+          'label_type' => 'none',
+          'format' => 'user-s_default',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'relationship' => 'group_nid',
+        ),
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+        ),
+        'value' => 'Neue Beiträge',
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'empty',
+          ),
+        ),
+        'value' => 'Keine neuen Beiträge gefunden',
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'summary',
+          ),
+        ),
+        'value' => '',
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'columns',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => 'group_nid',
+      ),
+      7 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'info',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'separator' => '',
+        ),
+      ),
+      8 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'relationships',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'group_nid',
+          ),
+        ),
+        'value' => array(
+          'label' => 'Gruppenbeitrag (Beitrag)',
+          'required' => 0,
+          'id' => 'group_nid',
+          'table' => 'og_ancestry',
+          'field' => 'group_nid',
+          'relationship' => 'none',
+        ),
+      ),
+      9 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 1,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 1,
+          'label_type' => 'none',
+          'format' => 'user-s_default',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'relationship' => 'group_nid',
+        ),
+      ),
+      10 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'summary',
+          ),
+        ),
+        'value' => '',
+      ),
+      11 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'columns',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => 'group_nid',
+      ),
+      12 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'info',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'separator' => '',
+        ),
+      ),
+      13 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_1',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'block_description',
+          ),
+        ),
+        'value' => 'Neue Beiträge',
+      ),
+      14 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+        ),
+        'value' => 'Neueste Dateien',
+      ),
+      15 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'empty',
+          ),
+        ),
+        'value' => 'Keine neuen Dateien gefunden.',
+      ),
+      16 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'block_description',
+          ),
+        ),
+        'value' => 'Neueste Dateien',
+      ),
+      17 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'block_description',
+          ),
+        ),
+        'value' => 'Aktivität des Benutzers',
+      ),
+    ),
+    'deletions' => array(),
+  );
+  $export['dlr_atrium_activity_listing'] = $features_override;
+
+  $features_override = new stdClass;
+  $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
+  $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_administer_dashboards';
   $features_override->description = '';
   $features_override->component_type = 'user_permission';
