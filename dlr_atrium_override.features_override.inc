@@ -1018,6 +1018,1118 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override = new stdClass;
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
+  $features_override->name = 'dlr_atrium_ogmy';
+  $features_override->description = 'adds image to group blocks (user menu and sidebar) and puts them into a raster';
+  $features_override->component_type = 'views';
+  $features_override->component_id = 'groups_listing';
+  $features_override->value = array(
+    'additions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'label_type' => 'none',
+          'format' => 'user-m_linked',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'relationship' => 'none',
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+        ),
+        'value' => 'Meine Gruppen',
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'empty',
+          ),
+        ),
+        'value' => 'Keine Gruppen gefunden.',
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'use_more_text',
+          ),
+        ),
+        'value' => 'Mehr...',
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'label_type' => 'none',
+          'format' => 'user-m_linked',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'relationship' => 'none',
+        ),
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'label_type' => 'none',
+          'format' => 'user-m_linked',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'override' => array(
+            'button' => 'Standard verwenden',
+          ),
+          'relationship' => 'none',
+        ),
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_plugin',
+          ),
+        ),
+        'value' => 'grid',
+      ),
+      7 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'grouping',
+          ),
+        ),
+        'value' => '',
+      ),
+      8 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'columns',
+          ),
+        ),
+        'value' => '4',
+      ),
+      9 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'alignment',
+          ),
+        ),
+        'value' => 'horizontal',
+      ),
+      10 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fill_single_line',
+          ),
+        ),
+        'value' => 1,
+      ),
+      11 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'summary',
+          ),
+        ),
+        'value' => '',
+      ),
+      12 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'block_description',
+          ),
+        ),
+        'value' => 'Meine Gruppen',
+      ),
+      13 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'field_projectlogo_fid',
+          ),
+        ),
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'label_type' => 'none',
+          'format' => 'user-m_linked',
+          'multiple' => array(
+            'group' => TRUE,
+            'multiple_number' => '',
+            'multiple_from' => '',
+            'multiple_reversed' => FALSE,
+          ),
+          'exclude' => 0,
+          'id' => 'field_projectlogo_fid',
+          'table' => 'node_data_field_projectlogo',
+          'field' => 'field_projectlogo_fid',
+          'override' => array(
+            'button' => 'Standard verwenden',
+          ),
+          'relationship' => 'none',
+        ),
+      ),
+      14 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_plugin',
+          ),
+        ),
+        'value' => 'grid',
+      ),
+      15 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'grouping',
+          ),
+        ),
+        'value' => '',
+      ),
+      16 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'columns',
+          ),
+        ),
+        'value' => '4',
+      ),
+      17 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'alignment',
+          ),
+        ),
+        'value' => 'horizontal',
+      ),
+      18 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'fill_single_line',
+          ),
+        ),
+        'value' => 1,
+      ),
+      19 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'summary',
+          ),
+        ),
+        'value' => '',
+      ),
+      20 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+        ),
+        'value' => 'Verzeichnis',
+      ),
+      21 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+        ),
+        'value' => 'Archivierte Gruppen',
+      ),
+      22 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'empty',
+          ),
+        ),
+        'value' => 'Keine archivierten Gruppen gefunden',
+      ),
+    ),
+    'deletions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'alter',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'absolute',
+          ),
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'alter',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'rel',
+          ),
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'hide_alter_empty',
+          ),
+        ),
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'override',
+          ),
+        ),
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'type',
+          ),
+        ),
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'type',
+          ),
+        ),
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'alter',
+          ),
+          7 => array(
+            'type' => 'array',
+            'key' => 'absolute',
+          ),
+        ),
+      ),
+      7 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'alter',
+          ),
+          7 => array(
+            'type' => 'array',
+            'key' => 'rel',
+          ),
+        ),
+      ),
+      8 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'hide_alter_empty',
+          ),
+        ),
+      ),
+      9 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'title',
+          ),
+          6 => array(
+            'type' => 'array',
+            'key' => 'override',
+          ),
+        ),
+      ),
+      10 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'type',
+          ),
+        ),
+      ),
+      11 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block_2',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'style_options',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'type',
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['dlr_atrium_ogmy'] = $features_override;
+
+  $features_override = new stdClass;
+  $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
+  $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_overrides';
   $features_override->description = 'Changes the source secondary links';
   $features_override->component_type = '0';
