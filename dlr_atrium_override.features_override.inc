@@ -350,7 +350,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           1 => array(
             'type' => 'array',
-            'key' => 'block_2',
+            'key' => 'default',
           ),
           2 => array(
             'type' => 'object',
@@ -360,85 +360,44 @@ function dlr_atrium_override_default_features_overrides() {
             'type' => 'array',
             'key' => 'fields',
           ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'type',
+          ),
         ),
         'value' => array(
-          'title' => array(
-            'label' => '',
-            'alter' => array(
-              'alter_text' => 0,
-              'text' => '',
-              'make_link' => 0,
-              'path' => '',
-              'absolute' => 0,
-              'link_class' => '',
-              'alt' => '',
-              'rel' => '',
-              'prefix' => '',
-              'suffix' => '',
-              'target' => '',
-              'help' => '',
-              'trim' => 0,
-              'max_length' => '',
-              'word_boundary' => 1,
-              'ellipsis' => 1,
-              'html' => 0,
-              'strip_tags' => 0,
-            ),
-            'empty' => '',
-            'hide_empty' => 0,
-            'empty_zero' => 0,
-            'hide_alter_empty' => 1,
-            'link_to_node' => 1,
-            'spaces' => array(
-              'frontpage' => 1,
-              'type' => 'spaces_og',
-            ),
-            'exclude' => 0,
-            'id' => 'title',
-            'table' => 'node',
-            'field' => 'title',
-            'relationship' => 'none',
-            'override' => array(
-              'button' => 'Use default',
-            ),
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
           ),
-          'type' => array(
-            'label' => '',
-            'alter' => array(
-              'alter_text' => 0,
-              'text' => '',
-              'make_link' => 0,
-              'path' => '',
-              'absolute' => 0,
-              'link_class' => '',
-              'alt' => '',
-              'rel' => '',
-              'prefix' => '',
-              'suffix' => '',
-              'target' => '',
-              'help' => '',
-              'trim' => 0,
-              'max_length' => '',
-              'word_boundary' => 1,
-              'ellipsis' => 1,
-              'html' => 0,
-              'strip_tags' => 0,
-            ),
-            'empty' => '',
-            'hide_empty' => 0,
-            'empty_zero' => 0,
-            'hide_alter_empty' => 1,
-            'link_to_node' => 0,
-            'machine_name' => 0,
-            'exclude' => 1,
-            'id' => 'type',
-            'table' => 'node',
-            'field' => 'type',
-            'override' => array(
-              'button' => 'Use default',
-            ),
-            'relationship' => 'none',
-          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'machine_name' => 0,
+          'exclude' => 1,
+          'id' => 'type',
+          'table' => 'node',
+          'field' => 'type',
+          'relationship' => 'none',
         ),
       ),
       1 => array(
@@ -449,7 +408,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           1 => array(
             'type' => 'array',
-            'key' => 'block_2',
+            'key' => 'default',
           ),
           2 => array(
             'type' => 'object',
@@ -457,14 +416,14 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'defaults',
+            'key' => 'style_options',
           ),
           4 => array(
             'type' => 'array',
-            'key' => 'fields',
+            'key' => 'grouping',
           ),
         ),
-        'value' => FALSE,
+        'value' => 'type',
       ),
       2 => array(
         'keys' => array(
@@ -474,22 +433,59 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           1 => array(
             'type' => 'array',
-            'key' => 'block_2',
+            'key' => 'default',
           ),
           2 => array(
             'type' => 'object',
-            'key' => 'display_options',
+            'key' => 'handler',
           ),
           3 => array(
-            'type' => 'array',
-            'key' => 'defaults',
+            'type' => 'object',
+            'key' => 'options',
           ),
           4 => array(
             'type' => 'array',
-            'key' => 'style_plugin',
+            'key' => 'fields',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'type',
           ),
         ),
-        'value' => FALSE,
+        'value' => array(
+          'label' => '',
+          'alter' => array(
+            'alter_text' => 0,
+            'text' => '',
+            'make_link' => 0,
+            'path' => '',
+            'absolute' => 0,
+            'link_class' => '',
+            'alt' => '',
+            'rel' => '',
+            'prefix' => '',
+            'suffix' => '',
+            'target' => '',
+            'help' => '',
+            'trim' => 0,
+            'max_length' => '',
+            'word_boundary' => 1,
+            'ellipsis' => 1,
+            'html' => 0,
+            'strip_tags' => 0,
+          ),
+          'empty' => '',
+          'hide_empty' => 0,
+          'empty_zero' => 0,
+          'hide_alter_empty' => 1,
+          'link_to_node' => 0,
+          'machine_name' => 0,
+          'exclude' => 1,
+          'id' => 'type',
+          'table' => 'node',
+          'field' => 'type',
+          'relationship' => 'none',
+        ),
       ),
       3 => array(
         'keys' => array(
@@ -499,445 +495,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           1 => array(
             'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'style_options',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      4 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'row_plugin',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      5 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'row_options',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      6 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'style_plugin',
-          ),
-        ),
-        'value' => 'list',
-      ),
-      7 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'style_options',
-          ),
-        ),
-        'value' => array(
-          'grouping' => 'type',
-          'type' => 'ul',
-        ),
-      ),
-      8 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'row_plugin',
-          ),
-        ),
-        'value' => 'fields',
-      ),
-      9 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'display_options',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'row_options',
-          ),
-        ),
-        'value' => array(
-          'inline' => array(),
-          'separator' => '',
-        ),
-      ),
-      10 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          5 => array(
-            'type' => 'array',
-            'key' => 'style_plugin',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      11 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          5 => array(
-            'type' => 'array',
-            'key' => 'style_options',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      12 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          5 => array(
-            'type' => 'array',
-            'key' => 'row_plugin',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      13 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          5 => array(
-            'type' => 'array',
-            'key' => 'row_options',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      14 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'defaults',
-          ),
-          5 => array(
-            'type' => 'array',
-            'key' => 'fields',
-          ),
-        ),
-        'value' => FALSE,
-      ),
-      15 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'fields',
-          ),
-        ),
-        'value' => array(
-          'title' => array(
-            'label' => '',
-            'alter' => array(
-              'alter_text' => 0,
-              'text' => '',
-              'make_link' => 0,
-              'path' => '',
-              'absolute' => 0,
-              'link_class' => '',
-              'alt' => '',
-              'rel' => '',
-              'prefix' => '',
-              'suffix' => '',
-              'target' => '',
-              'help' => '',
-              'trim' => 0,
-              'max_length' => '',
-              'word_boundary' => 1,
-              'ellipsis' => 1,
-              'html' => 0,
-              'strip_tags' => 0,
-            ),
-            'empty' => '',
-            'hide_empty' => 0,
-            'empty_zero' => 0,
-            'hide_alter_empty' => 1,
-            'link_to_node' => 1,
-            'spaces' => array(
-              'frontpage' => 1,
-              'type' => 'spaces_og',
-            ),
-            'exclude' => 0,
-            'id' => 'title',
-            'table' => 'node',
-            'field' => 'title',
-            'relationship' => 'none',
-            'override' => array(
-              'button' => 'Use default',
-            ),
-          ),
-          'type' => array(
-            'label' => '',
-            'alter' => array(
-              'alter_text' => 0,
-              'text' => '',
-              'make_link' => 0,
-              'path' => '',
-              'absolute' => 0,
-              'link_class' => '',
-              'alt' => '',
-              'rel' => '',
-              'prefix' => '',
-              'suffix' => '',
-              'target' => '',
-              'help' => '',
-              'trim' => 0,
-              'max_length' => '',
-              'word_boundary' => 1,
-              'ellipsis' => 1,
-              'html' => 0,
-              'strip_tags' => 0,
-            ),
-            'empty' => '',
-            'hide_empty' => 0,
-            'empty_zero' => 0,
-            'hide_alter_empty' => 1,
-            'link_to_node' => 0,
-            'machine_name' => 0,
-            'exclude' => 1,
-            'id' => 'type',
-            'table' => 'node',
-            'field' => 'type',
-            'override' => array(
-              'button' => 'Use default',
-            ),
-            'relationship' => 'none',
-          ),
-        ),
-      ),
-      16 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'style_plugin',
-          ),
-        ),
-        'value' => 'list',
-      ),
-      17 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
+            'key' => 'default',
           ),
           2 => array(
             'type' => 'object',
@@ -951,64 +509,12 @@ function dlr_atrium_override_default_features_overrides() {
             'type' => 'array',
             'key' => 'style_options',
           ),
-        ),
-        'value' => array(
-          'grouping' => 'type',
-          'type' => 'ul',
-        ),
-      ),
-      18 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
+          5 => array(
             'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'row_plugin',
+            'key' => 'grouping',
           ),
         ),
-        'value' => 'fields',
-      ),
-      19 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'display',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'block_2',
-          ),
-          2 => array(
-            'type' => 'object',
-            'key' => 'handler',
-          ),
-          3 => array(
-            'type' => 'object',
-            'key' => 'options',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'row_options',
-          ),
-        ),
-        'value' => array(
-          'inline' => array(),
-          'separator' => '',
-        ),
+        'value' => 'type',
       ),
     ),
     'deletions' => array(),
