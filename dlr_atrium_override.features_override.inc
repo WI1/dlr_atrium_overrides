@@ -630,7 +630,7 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_context_global';
-  $features_override->description = 'Changes to global context';
+  $features_override->description = 'Overrides block settings on global context';
   $features_override->component_type = 'context';
   $features_override->component_id = 'global';
   $features_override->value = array(
@@ -651,16 +651,69 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium-user_links',
-          ),
-          4 => array(
-            'type' => 'array',
-            'key' => 'weight',
+            'key' => 'nice_menus-2',
           ),
         ),
-        'value' => 2,
+        'value' => array(
+          'module' => 'nice_menus',
+          'delta' => 2,
+          'region' => 'header',
+          'weight' => 2,
+        ),
       ),
       1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'reactions',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'blocks',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'boxes-foerderleiste',
+          ),
+        ),
+        'value' => array(
+          'module' => 'boxes',
+          'delta' => 'foerderleiste',
+          'region' => 'footer',
+          'weight' => 0,
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'reactions',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'blocks',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'footermap-0',
+          ),
+        ),
+        'value' => array(
+          'module' => 'footermap',
+          'delta' => 0,
+          'region' => 'footer',
+          'weight' => 1,
+        ),
+      ),
+      3 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
@@ -685,7 +738,7 @@ function dlr_atrium_override_default_features_overrides() {
         ),
         'value' => 'space_tools',
       ),
-      2 => array(
+      4 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
@@ -710,7 +763,7 @@ function dlr_atrium_override_default_features_overrides() {
         ),
         'value' => 1,
       ),
-      3 => array(
+      5 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
@@ -778,6 +831,26 @@ function dlr_atrium_override_default_features_overrides() {
         ),
       ),
       2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'reactions',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'block',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'blocks',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard-editor',
+          ),
+        ),
+      ),
+      3 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
