@@ -977,6 +977,514 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override = new stdClass;
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
+  $features_override->name = 'dlr_atrium_groups_members_list_view';
+  $features_override->description = 'View for groups members list';
+  $features_override->component_type = 'views';
+  $features_override->component_id = 'members_listing';
+  $features_override->value = array(
+    'additions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'rid',
+          ),
+        ),
+        'value' => array(
+          'operator' => 'not',
+          'value' => array(
+            3 => '3',
+          ),
+          'group' => '0',
+          'exposed' => FALSE,
+          'expose' => array(
+            'operator' => FALSE,
+            'label' => '',
+          ),
+          'id' => 'rid',
+          'table' => 'users_roles',
+          'field' => 'rid',
+          'relationship' => 'none',
+          'reduce_duplicates' => 0,
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'default',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'rid',
+          ),
+        ),
+        'value' => array(
+          'operator' => 'not',
+          'value' => array(
+            3 => '3',
+          ),
+          'group' => '0',
+          'exposed' => FALSE,
+          'expose' => array(
+            'operator' => FALSE,
+            'label' => '',
+          ),
+          'id' => 'rid',
+          'table' => 'users_roles',
+          'field' => 'rid',
+          'relationship' => 'none',
+          'reduce_duplicates' => 0,
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_1',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => array(
+          'status' => array(
+            'operator' => '=',
+            'value' => 1,
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'status',
+            'table' => 'users',
+            'field' => 'status',
+            'override' => array(
+              'button' => 'Override',
+            ),
+            'relationship' => 'none',
+          ),
+          'current' => array(
+            'operator' => '=',
+            'value' => '',
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'current',
+            'table' => 'spaces',
+            'field' => 'current',
+            'relationship' => 'none',
+          ),
+          'rid' => array(
+            'operator' => 'not',
+            'value' => array(
+              3 => '3',
+            ),
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'rid',
+            'table' => 'users_roles',
+            'field' => 'rid',
+            'override' => array(
+              'button' => 'Use default',
+            ),
+            'relationship' => 'none',
+            'reduce_duplicates' => 0,
+          ),
+        ),
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_1',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'defaults',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => FALSE,
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_1',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'defaults',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => FALSE,
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_1',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => array(
+          'status' => array(
+            'operator' => '=',
+            'value' => 1,
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'status',
+            'table' => 'users',
+            'field' => 'status',
+            'override' => array(
+              'button' => 'Override',
+            ),
+            'relationship' => 'none',
+          ),
+          'current' => array(
+            'operator' => '=',
+            'value' => '',
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'current',
+            'table' => 'spaces',
+            'field' => 'current',
+            'relationship' => 'none',
+          ),
+          'rid' => array(
+            'operator' => 'not',
+            'value' => array(
+              3 => '3',
+            ),
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'rid',
+            'table' => 'users_roles',
+            'field' => 'rid',
+            'override' => array(
+              'button' => 'Use default',
+            ),
+            'relationship' => 'none',
+            'reduce_duplicates' => 0,
+          ),
+        ),
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'defaults',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => FALSE,
+      ),
+      7 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'display_options',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => array(
+          'status' => array(
+            'operator' => '=',
+            'value' => 1,
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'status',
+            'table' => 'users',
+            'field' => 'status',
+            'override' => array(
+              'button' => 'Override',
+            ),
+            'relationship' => 'none',
+          ),
+          'current' => array(
+            'operator' => '=',
+            'value' => '',
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'current',
+            'table' => 'spaces',
+            'field' => 'current',
+            'relationship' => 'none',
+          ),
+          'rid' => array(
+            'operator' => 'not',
+            'value' => array(
+              3 => '3',
+            ),
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'rid',
+            'table' => 'users_roles',
+            'field' => 'rid',
+            'override' => array(
+              'button' => 'Use default',
+            ),
+            'relationship' => 'none',
+            'reduce_duplicates' => 0,
+          ),
+        ),
+      ),
+      8 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'defaults',
+          ),
+          5 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => FALSE,
+      ),
+      9 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'display',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'page_3',
+          ),
+          2 => array(
+            'type' => 'object',
+            'key' => 'handler',
+          ),
+          3 => array(
+            'type' => 'object',
+            'key' => 'options',
+          ),
+          4 => array(
+            'type' => 'array',
+            'key' => 'filters',
+          ),
+        ),
+        'value' => array(
+          'status' => array(
+            'operator' => '=',
+            'value' => 1,
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'status',
+            'table' => 'users',
+            'field' => 'status',
+            'override' => array(
+              'button' => 'Override',
+            ),
+            'relationship' => 'none',
+          ),
+          'current' => array(
+            'operator' => '=',
+            'value' => '',
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'current',
+            'table' => 'spaces',
+            'field' => 'current',
+            'relationship' => 'none',
+          ),
+          'rid' => array(
+            'operator' => 'not',
+            'value' => array(
+              3 => '3',
+            ),
+            'group' => '0',
+            'exposed' => FALSE,
+            'expose' => array(
+              'operator' => FALSE,
+              'label' => '',
+            ),
+            'id' => 'rid',
+            'table' => 'users_roles',
+            'field' => 'rid',
+            'override' => array(
+              'button' => 'Use default',
+            ),
+            'relationship' => 'none',
+            'reduce_duplicates' => 0,
+          ),
+        ),
+      ),
+    ),
+    'deletions' => array(),
+  );
+  $export['dlr_atrium_groups_members_list_view'] = $features_override;
+
+  $features_override = new stdClass;
+  $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
+  $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_groups_side_view';
   $features_override->description = 'Modified My Groups view to categorize groups by node type';
   $features_override->component_type = 'views';
