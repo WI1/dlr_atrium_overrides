@@ -1675,10 +1675,150 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_groups_spaces_features_tabs';
   $features_override->description = 'Features menu tabs in private group spaces have been configured to show only info, calendar and members with info as the home pa';
-  $features_override->component_type = 'variable';
-  $features_override->component_id = 'spaces_dashboard_blocks';
+  $features_override->component_type = 'spaces_presets';
+  $features_override->component_id = 'atrium_groups_private';
   $features_override->value = array(
-    'additions' => array(),
+    'additions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_blog',
+          ),
+        ),
+        'value' => '0',
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_book',
+          ),
+        ),
+        'value' => '0',
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_casetracker',
+          ),
+        ),
+        'value' => '0',
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_shoutbox',
+          ),
+        ),
+        'value' => '0',
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard',
+          ),
+        ),
+        'value' => '0',
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'site_frontpage',
+          ),
+        ),
+        'value' => 'info',
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'site_frontpage_path',
+          ),
+        ),
+        'value' => 'dashboard',
+      ),
+    ),
     'deletions' => array(
       0 => array(
         'keys' => array(
@@ -1688,7 +1828,51 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           1 => array(
             'type' => 'array',
-            'key' => 'devel-2',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_folders',
+          ),
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'spacesoghome',
+          ),
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard_blocks',
           ),
         ),
       ),
