@@ -1673,6 +1673,216 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override = new stdClass;
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
+  $features_override->name = 'dlr_atrium_groups_spaces_features_tabs';
+  $features_override->description = 'Features menu tabs in private group spaces have been configured to show only info, calendar and members with info as the home pa';
+  $features_override->component_type = 'spaces_presets';
+  $features_override->component_id = 'atrium_groups_private';
+  $features_override->value = array(
+    'additions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_blog',
+          ),
+        ),
+        'value' => '0',
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_book',
+          ),
+        ),
+        'value' => '0',
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_casetracker',
+          ),
+        ),
+        'value' => '0',
+      ),
+      3 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_shoutbox',
+          ),
+        ),
+        'value' => '0',
+      ),
+      4 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard',
+          ),
+        ),
+        'value' => '0',
+      ),
+      5 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'site_frontpage',
+          ),
+        ),
+        'value' => 'info',
+      ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'site_frontpage_path',
+          ),
+        ),
+        'value' => 'dashboard',
+      ),
+    ),
+    'deletions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_folders',
+          ),
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'spacesoghome',
+          ),
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard_blocks',
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['dlr_atrium_groups_spaces_features_tabs'] = $features_override;
+
+  $features_override = new stdClass;
+  $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
+  $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_ogmy';
   $features_override->description = 'adds image to group blocks (user menu and sidebar) and puts them into a raster';
   $features_override->component_type = 'views';
@@ -2862,7 +3072,7 @@ function dlr_atrium_override_default_features_overrides() {
   $features_override->disabled = FALSE; /* Edit this to true to make a default features_override disabled initially */
   $features_override->api_version = 1;
   $features_override->name = 'dlr_atrium_spaces_private';
-  $features_override->description = 'Features menu tabs in private group spaces have been configured to show only info, calendar and members with info as the home pa';
+  $features_override->description = '';
   $features_override->component_type = 'spaces_presets';
   $features_override->component_id = 'atrium_groups_private';
   $features_override->value = array(
@@ -2883,10 +3093,10 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium_blog',
+            'key' => 'atrium_calendar',
           ),
         ),
-        'value' => '0',
+        'value' => '1',
       ),
       1 => array(
         'keys' => array(
@@ -2904,10 +3114,10 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium_book',
+            'key' => 'atrium_folders',
           ),
         ),
-        'value' => '0',
+        'value' => '1',
       ),
       2 => array(
         'keys' => array(
@@ -2925,7 +3135,7 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           3 => array(
             'type' => 'array',
-            'key' => 'atrium_calendar',
+            'key' => 'spacesoghome',
           ),
         ),
         'value' => '1',
@@ -2942,33 +3152,12 @@ function dlr_atrium_override_default_features_overrides() {
           ),
           2 => array(
             'type' => 'array',
-            'key' => 'spaces_features',
-          ),
-          3 => array(
-            'type' => 'array',
-            'key' => 'spaces_dashboard',
-          ),
-        ),
-        'value' => '0',
-      ),
-      4 => array(
-        'keys' => array(
-          0 => array(
-            'type' => 'object',
-            'key' => 'value',
-          ),
-          1 => array(
-            'type' => 'array',
-            'key' => 'variable',
-          ),
-          2 => array(
-            'type' => 'array',
             'key' => 'site_frontpage',
           ),
         ),
-        'value' => 'info',
+        'value' => 'blog',
       ),
-      5 => array(
+      4 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
@@ -2983,9 +3172,9 @@ function dlr_atrium_override_default_features_overrides() {
             'key' => 'site_frontpage_path',
           ),
         ),
-        'value' => 'dashboard',
+        'value' => 'blog',
       ),
-      6 => array(
+      5 => array(
         'keys' => array(
           0 => array(
             'type' => 'object',
@@ -3004,8 +3193,99 @@ function dlr_atrium_override_default_features_overrides() {
           'logo' => 0,
         ),
       ),
+      6 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_dashboard_blocks',
+          ),
+        ),
+        'value' => array(
+          'atrium_calendar-mini' => 1,
+          'user-2' => 1,
+          'user-3' => 1,
+          'views-activity_listing-block_1' => 1,
+          'views-activity_listing-block_2' => 1,
+          'views-blog_comments-block_1' => 1,
+          'views-blog_listing-block_2' => 1,
+          'views-calendar_upcoming-block_1' => 1,
+          'views-folders-block_1' => 1,
+          'views-folders_folders-block_1' => 1,
+          'views-groups_listing-block_2' => 1,
+          'views-info_listing-block_1' => 1,
+        ),
+      ),
     ),
-    'deletions' => array(),
+    'deletions' => array(
+      0 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_book',
+          ),
+        ),
+      ),
+      1 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_casetracker',
+          ),
+        ),
+      ),
+      2 => array(
+        'keys' => array(
+          0 => array(
+            'type' => 'object',
+            'key' => 'value',
+          ),
+          1 => array(
+            'type' => 'array',
+            'key' => 'variable',
+          ),
+          2 => array(
+            'type' => 'array',
+            'key' => 'spaces_features',
+          ),
+          3 => array(
+            'type' => 'array',
+            'key' => 'atrium_shoutbox',
+          ),
+        ),
+      ),
+    ),
   );
   $export['dlr_atrium_spaces_private'] = $features_override;
 
